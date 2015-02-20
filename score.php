@@ -24,7 +24,7 @@ $result = $conn->query($sql);
 		<table id="table-wrapper">
 			<tr>
 			<?php while($row = $result->fetch_assoc()) { ?>
-				<td><img src="images/".<?php $row["year"]?>.".png" class="year"></td><td><button class="myButton"><?php $row["total"] ?></button></td>
+				<td><img src="images/".<?php echo $row["year"]?>.".png" class="year"></td><td><button class="myButton"><?php echo $row["total"] ?></button></td>
 			</tr>
 			<?php } ?>
 		</table>
