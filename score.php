@@ -22,27 +22,13 @@ $result = $conn->query($sql);
 ?>
 	<div id="div-align">
 		<table id="table-wrapper">
-			<tr><?php if (1) { ?>
-				<td><img src="images/s8.png" class="year"></td><td><button class="myButton">score1<!-- dynamic --></button></td>
-			
-				<?php } ?>
+			<tr>
+			<?php while($row = $result->fetch_assoc()) { ?>
+				<td><img src="images/".<?php $row["year"]?>.".png" class="year"></td><td><button class="myButton"><?php $row["total"] ?></button></td>
 			</tr>
-
-			<tr><?php if (1) { ?>
-				<td><img src="images/s6.png" class="year"></td><td><button class="myButton">score2<!-- dynamic --></button></td>
 			<?php } ?>
-			</tr>
-			<tr><?php if (1) { ?>
-				<td><img src="images/s4.png" class="year"></td><td><button class="myButton">score3<!-- dynamic --></button></td>
-			<?php } ?>
-			</tr>
-			<tr><?php if (1) { ?>
-				<td><img src="images/s1&s2.png" class="year"></td><td><button class="myButton">score4<!-- dynamic --></button></td>
-			<?php } ?>
-			</tr>
 		</table>
 	</div>
-<php?	$conn->close();
-?>
+<?php	$conn->close();?>
 </body>
 </html>
