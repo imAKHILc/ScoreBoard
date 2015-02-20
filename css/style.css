@@ -1,3 +1,11 @@
+/* font */
+
+@font-face {
+	font-family: "Raleway font";
+	src: url("../font/Raleway%20Thin.ttf") format("truetype");
+}
+
+
 /* basic initialisations */
 
 h1, h2, h3, h4, h5, h6, p, a, ul, ol, li, small 
@@ -15,10 +23,6 @@ h1, h2, h3, h4, h5, h6, p, a, ul, ol, li, small
 
     background: transparent; 
 }
-table tr td
-{
-
-}
 
 body 
 {
@@ -35,7 +39,7 @@ body
 	border:1px solid #7f4a3e;
 	display:inline-block;
 	color:#ffffff;
-	font-family:arial;
+	font-family: "Raleway font", sans-serif;
 	font-size:17px;
 	padding:16px 31px;
 	text-decoration:none;
