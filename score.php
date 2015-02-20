@@ -16,9 +16,17 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
-
+$sql1 = "SELECT EssayMal,EssayEng,FilmReview,PaintOil,LoveLetter,PoetryEng,ClayModel,Mehandi,PencilDraw,Poetry,PintingWater,Collage,ShortStoryEng,ShortStoryMal,Poster,DebateMal,DebateEng,Cartoon,Thiruvathira,Kolkkali,DuetSong,OppanaMale,FancyDance,WesternDance,WesternGroupSong,StepInSynchro,Drama,OppanaFemale,SkitMal,Nostalgia,AdaptTune,Mime,Nadanpattu,SkitEng,FolkDance,GroupDance,Tableaux,Ganamela,VideoChoreography,LightMusicMale,ElocutionEng,RecitationEng,Mimicry,MappilappattuFemale,LightMusicFemale,MappilappattuMale,ClassicalMusic,RecitationMal,MonoAct,WesternSolo,Kadhaprasangam,GroupMusic,ElocutionMal,Rangoli,Photography FROM score";
+$result1 = $conn->query($sql1);
+while($row1 = $result1->fetch_assoc()) {
+	$sum = $row1["EssayMal"]+$row1["EssayEng"]+$row1["FilmReview"]+$row1["PaintOil"]+$row1["LoveLetter"]+$row1["PoetryEng"]+$row1["ClayModel"]+$row1["Mehandi"]+$row1["PencilDraw"]+$row1["Poetry"]+$row1["PintingWater"]+$row1["Collage"]+$row1["ShortStoryEng"]+$row1["Poster"]+$row1["DebateMal"]+$row1["DebateEng"]+$row1["Cartoon"]+$row1["Thiruvathira"]+$row1["Kolkkali"]+$row1["DuetSong"]+$row1["OppanaMale"]+$row1["FancyDance"]+$row1["WesternDance"]+$row1["WesternGroupSong"]+$row1["StepInSynchro"]+$row1["Drama"]+$row1["OppanaFemale"]+$row1["SkitMal"]+$row1["Nostalgia"]+$row1["AdaptTune"]+$row1["Mime"]+$row1["Nadanpattu"]+$row1["SkitEng"]+$row1["FolkDance"]+$row1["GroupDance"]+$row1["Tableaux"]+$row1["Ganamela"]+$row1["VideoChoreography"]+$row1["LightMusicMale"]+$row1["ElocutionEng"]+$row1["RecitationEng"]+$row1["Mimicry"]+$row1["MappilappattuFemale"]+$row1["LightMusicFemale"]+$row1["MappilappattuMale"]+$row1["ClassicalMusic"]+$row1["RecitationMal"]+$row1["MonoAct"]+$row1["WesternSolo"]+$row1["Kadhaprasangam"]+$row1["GroupMusic"]+$row1["ElocutionMal"]+$row1["Rangoli"]+$row1["Photography"];
+$sql2 = "UPDATE score SET total=sum";
+$result2 = $conn->query($sql2);
+}
 $sql = "SELECT year,total FROM score ORDER BY total DESC";
 $result = $conn->query($sql);
+
+
 ?>
 	<div id="div-align" align="center">
 		<table id="table-wrapper">
