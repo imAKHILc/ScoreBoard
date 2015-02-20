@@ -41,32 +41,27 @@ body
 	color:#ffffff;
 	font-family: "Raleway font", sans-serif;
 	font-size:17px;
-	padding:16px 31px;
 	text-decoration:none;
-	width:100px;
+	width:270px;
+	height:90px;
 }
 .myButton:hover {
 	background-color:#a26e62;
-}
-.myButton:active {
-	position:relative;
-	top:1px;
 }
 
 
 #div-align
 {
-	margin: 9% 40% 20%;
+	margin: 7%;
 }
 
 #table-wrapper
 {
 	border-radius: 8%;
 	border: none;
-	padding: 20%;
 }
 
 .year {
-	height: 54px;
-	width: 120px;
+	height: 90px;
+	width: 270px;
 }

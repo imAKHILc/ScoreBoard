@@ -20,7 +20,7 @@ if ($conn->connect_error) {
 $sql = "SELECT year,total FROM score ORDER BY total DESC";
 $result = $conn->query($sql);
 ?>
-	<div id="div-align">
+	<div id="div-align" align="center">
 		<table id="table-wrapper">
 			<tr>
 			<?php while($row = $result->fetch_assoc()) { ?>
