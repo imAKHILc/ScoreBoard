@@ -79,5 +79,9 @@ body
 	border-radius: 8%;
 	border: none;
 	padding: 20%;
-	background-color: darkgray;
+}
+
+.year {
+	height: 45px;
+	width: 90px;
 }
