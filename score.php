@@ -58,6 +58,6 @@ $result = $conn->query($sql);
 <?php	$conn->close();?>
 </body>
 <footer id="css-footer">
-    <p align="center"> ©Teczoz </p>
+    <p align="center">©Teczoz </p>
 </footer>
 </html>
