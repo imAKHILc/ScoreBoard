@@ -130,3 +130,16 @@ select{
 	height: auto;
 	font-size: 155%;
 }
+
+/* Home page */
+.home-table-content-buttons {
+	background-color: #114056;
+	border: 1px solid #114056;
+	display: inline-block;
+	color: #ffffff;
+	font-family: "Raleway font", sans-serif;
+	font-size: 450%;
+	text-decoration: none;
+	width: 100%;
+	height: auto;
+}
