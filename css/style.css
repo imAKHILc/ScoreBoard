@@ -143,3 +143,15 @@ select{
 	width: 100%;
 	height: auto;
 }
+.home-table-content-buttons:hover {
+	cursor: pointer;
+	background-color: #1f769f;
+	border: 1px solid #1f769f;
+	display: inline-block;
+	color: #ffffff;
+	font-family: "Raleway font", sans-serif;
+	font-size: 450%;
+	text-decoration: none;
+	width: 100%;
+	height: auto;
+}
