@@ -109,6 +109,7 @@ body
 	text-decoration:none;
 	width:20%;
 	height: auto;
+	font-weight: bolder;
 }
 
 .enter-button {
@@ -121,15 +122,31 @@ body
 	text-decoration:none;
 	width:100px;
 	height:40px;
+	font-weight: bolder;
 }
+
 input{
 	width:29.5%;
 	font-size: 150%;
+	font-weight: bolder;
+	/*color: #ffffff;
+	background-color: #114056;*/
 }
+
 select{
 	width:30%;
 	height: auto;
 	font-size: 155%;
+	color: #ffffff;
+	font-weight: bolder;
+	background-color: #114056;
+	font-family: "Raleway font", sans-serif;
+}
+
+option{
+	color: #ffffff;
+	background-color: #114056;
+	font-family: "Raleway font", sans-serif;
 }
 
 /* Home page */
