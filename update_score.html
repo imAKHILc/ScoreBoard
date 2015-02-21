@@ -7,10 +7,10 @@
 </head>
 <body>
 <div id="div-align" >
-    <form id="update-form" method="post">
+    <form id="update-form" action="update.php" method="post">
         <div align="center">
             <button class="update-form-buttons">Year/Semester</button>
-            <select class= "">
+            <select name= "sem">
                 <option value = "s8">S8</option>
                 <option value = "s6">S6</option>
                 <option value = "s4">S4</option>
@@ -19,7 +19,7 @@
             <br>
             <br>
             <button class="update-form-buttons">Item Name</button>
-            <select class="styled-select black rounded">
+            <select class="styled-select black rounded" name="item">
                 <option value = "EssayMal">Essay Writing (MAL)</option>
                 <option value = "EssayEng">Essay Writing (ENG)</option>
                 <option value = "FilmReview">Film Review</option>
