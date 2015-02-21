@@ -156,3 +156,12 @@ select{
 	width: 100%;
 	height: auto;
 }
+
+/* Footer */
+
+
+#css-footer p{
+	font-family: "Raleway font", sans-serif;
+	font-size: 200%;
+	text-shadow: #7f4a3e;
+}
