@@ -94,3 +94,17 @@ body
 	height: 50%;
 	width: 100%;
 }
+
+/* update form customization */
+
+.update-form-buttons {
+	background-color: #114056;
+	border:1px solid #114056;
+	display:inline-block;
+	color:#ffffff;
+	font-family: "Raleway font", sans-serif;
+	font-size:150%;
+	text-decoration:none;
+	width:20%;
+	height: auto;
+}
