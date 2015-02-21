@@ -1,6 +1,7 @@
 <html>
-<head>
 <title>ScoreBoard</title>
+<head lang="en">
+    <meta charset="UTF-8">
 <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
@@ -58,6 +59,6 @@ $result = $conn->query($sql);
 <?php	$conn->close();?>
 </body>
 <footer id="css-footer">
-    <p align="center">©Teczoz </p>
+    <p align="center" >©Teczoz  </p>
 </footer>
 </html>
