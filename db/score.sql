@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 20, 2015 at 10:29 PM
+-- Generation Time: Feb 21, 2015 at 07:57 AM
 -- Server version: 5.6.17
 -- PHP Version: 5.5.12
 
@@ -28,6 +28,7 @@ SET time_zone = "+00:00";
 
 CREATE TABLE IF NOT EXISTS `score` (
   `year` varchar(11) NOT NULL,
+  `passtime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   `EssayMal` int(11) NOT NULL DEFAULT '0',
   `EssayEng` int(11) NOT NULL DEFAULT '0',
   `FilmReview` int(11) NOT NULL DEFAULT '0',
@@ -83,7 +84,7 @@ CREATE TABLE IF NOT EXISTS `score` (
   `ElocutionMal` int(11) NOT NULL DEFAULT '0',
   `Rangoli` int(11) NOT NULL DEFAULT '0',
   `Photography` int(11) NOT NULL DEFAULT '0',
-  `Total` int(11) NOT NULL DEFAULT '0',
+  `total` bigint(20) NOT NULL,
   PRIMARY KEY (`year`),
   FULLTEXT KEY `year` (`year`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -92,11 +93,11 @@ CREATE TABLE IF NOT EXISTS `score` (
 -- Dumping data for table `score`
 --
 
-INSERT INTO `score` (`year`, `EssayMal`, `EssayEng`, `FilmReview`, `PaintOil`, `LoveLetter`, `PoetryEng`, `ClayModel`, `Mehandi`, `PencilDraw`, `Poetry`, `PintingWater`, `Collage`, `ShortStoryEng`, `ShortStoryMal`, `Poster`, `DebateMal`, `DebateEng`, `Cartoon`, `Thiruvathira`, `Kolkkali`, `DuetSong`, `OppanaMale`, `FancyDance`, `WesternDance`, `WesternGroupSong`, `StepInSynchro`, `Drama`, `OppanaFemale`, `SkitMal`, `Nostalgia`, `AdaptTune`, `Mime`, `Nadanpattu`, `SkitEng`, `FolkDance`, `GroupDance`, `Tableaux`, `Ganamela`, `VideoChoreography`, `LightMusicMale`, `ElocutionEng`, `RecitationEng`, `Mimicry`, `MappilappattuFemale`, `LightMusicFemale`, `MappilappattuMale`, `ClassicalMusic`, `RecitationMal`, `MonoAct`, `WesternSolo`, `Kadhaprasangam`, `GroupMusic`, `ElocutionMal`, `Rangoli`, `Photography`, `Total`) VALUES
-('s1s2', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
-('s4', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
-('s6', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
-('s8', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+INSERT INTO `score` (`year`, `passtime`, `EssayMal`, `EssayEng`, `FilmReview`, `PaintOil`, `LoveLetter`, `PoetryEng`, `ClayModel`, `Mehandi`, `PencilDraw`, `Poetry`, `PintingWater`, `Collage`, `ShortStoryEng`, `ShortStoryMal`, `Poster`, `DebateMal`, `DebateEng`, `Cartoon`, `Thiruvathira`, `Kolkkali`, `DuetSong`, `OppanaMale`, `FancyDance`, `WesternDance`, `WesternGroupSong`, `StepInSynchro`, `Drama`, `OppanaFemale`, `SkitMal`, `Nostalgia`, `AdaptTune`, `Mime`, `Nadanpattu`, `SkitEng`, `FolkDance`, `GroupDance`, `Tableaux`, `Ganamela`, `VideoChoreography`, `LightMusicMale`, `ElocutionEng`, `RecitationEng`, `Mimicry`, `MappilappattuFemale`, `LightMusicFemale`, `MappilappattuMale`, `ClassicalMusic`, `RecitationMal`, `MonoAct`, `WesternSolo`, `Kadhaprasangam`, `GroupMusic`, `ElocutionMal`, `Rangoli`, `Photography`, `total`) VALUES
+('s1s2', '2015-02-21 06:52:05', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+('s4', '2015-02-21 06:55:04', 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1),
+('s6', '2015-02-21 06:52:05', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+('s8', '2015-02-21 06:54:40', 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

@@ -41,7 +41,7 @@ $sql2 = "UPDATE score SET total=$sum[3] WHERE year='s8'";
     echo "Total not Updated";
 	}
 
-$sql = "SELECT year,total FROM score ORDER BY total DESC";
+$sql = "SELECT year,total FROM score ORDER BY total DESC,passtime ASC";
 $result = $conn->query($sql);
 
 
