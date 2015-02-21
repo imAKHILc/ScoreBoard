@@ -70,12 +70,17 @@ body
 	display:inline-block;
 	color:#ffffff;
 	font-family: "Raleway font", sans-serif;
-	font-size:50px;
+	font-size:300%;
 	text-decoration:none;
-	height: auto;
-	width: auto;
+	/*height: auto;
+	width: auto;*/
 }
 
 #reduce-font button{
-	font-size: 25px;
+	font-size:130%;
+}
+
+#adjust-size {
+	height: 50%;
+	width: 100%;
 }
