@@ -62,3 +62,20 @@ body
 	height: 90px;
 	width: 270px;
 }
+
+/* Winners table customization goes here */
+.winner-table-buttons {
+	background-color:#7f4a3e;
+	border:1px solid #7f4a3e;
+	display:inline-block;
+	color:#ffffff;
+	font-family: "Raleway font", sans-serif;
+	font-size:50px;
+	text-decoration:none;
+	height: auto;
+	width: auto;
+}
+
+#reduce-font button{
+	font-size: 25px;
+}
