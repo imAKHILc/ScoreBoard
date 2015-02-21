@@ -29,6 +29,7 @@ body
 	background-image: url("../images/bg.jpg");
     background-color: #ebebeb;
     width: 100%;
+	height: auto;
 	margin: 0 auto;
 }
 
