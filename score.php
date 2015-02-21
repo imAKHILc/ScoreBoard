@@ -47,7 +47,7 @@ $result = $conn->query($sql);
 
 ?>
 	<div id="div-align">
-		<table id="table-wrapper">
+		<table id="table-wrapper" align = "center">
 			<tr>
 			<?php while($row = $result->fetch_assoc()) { ?>
 				<td><img src=<?php echo "images/".$row["year"].".png"?> class="year"></td><td><button class="myButton"><?php echo $row["total"] ?></button></td>
