@@ -97,6 +97,7 @@ body
 
 /* update form customization */
 
+
 .update-form-buttons {
 	background-color: #114056;
 	border:1px solid #114056;
@@ -121,11 +122,11 @@ body
 	height:40px;
 }
 input{
-	width:8%;
+	width:23.5%;
 	font-size: 150%;
 }
 select{
-	width:auto%;
+	width:24%;
 	height: auto;
 	font-size: 155%;
 }
