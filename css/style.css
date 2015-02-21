@@ -108,3 +108,24 @@ body
 	width:20%;
 	height: auto;
 }
+
+.enter-button {
+	background-color: indigo;
+	border:1px solid indigo;
+	display:inline-block;
+	color:#ffffff;
+	font-family: "Raleway font", sans-serif;
+	font-size:36px;
+	text-decoration:none;
+	width:100px;
+	height:40px;
+}
+input{
+	width:8%;
+	font-size: 150%;
+}
+select{
+	width:auto%;
+	height: auto;
+	font-size: 155%;
+}
