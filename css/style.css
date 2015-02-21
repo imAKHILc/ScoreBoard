@@ -64,20 +64,30 @@ body
 }
 
 /* Winners table customization goes here */
-.winner-table-buttons {
+.winner-table-header-buttons {
 	background-color:#7f4a3e;
 	border:1px solid #7f4a3e;
 	display:inline-block;
 	color:#ffffff;
 	font-family: "Raleway font", sans-serif;
-	font-size:300%;
+	font-size:330%;
 	text-decoration:none;
 	/*height: auto;
 	width: auto;*/
 }
+.winner-table-content-buttons {
+	background-color:#7f4a3e;
+	border:1px solid #7f4a3e;
+	display:inline-block;
+	color:#ffffff;
+	font-family: "Raleway font", sans-serif;
+	font-size:200%;
+	text-decoration:none;
+	width:100%;
+}
 
 #reduce-font button{
-	font-size:130%;
+	font-size:140%;
 }
 
 #adjust-size {
