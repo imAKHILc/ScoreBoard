@@ -70,20 +70,20 @@ body
 	display:inline-block;
 	color:#ffffff;
 	font-family: "Raleway font", sans-serif;
-	font-size:330%;
+	font-size:300%;
 	text-decoration:none;
-	/*height: auto;
-	width: auto;*/
+	width: 100%;
 }
 .winner-table-content-buttons {
-	background-color:#7f4a3e;
-	border:1px solid #7f4a3e;
+	background-color: #114056;
+	border:1px solid #114056;
 	display:inline-block;
 	color:#ffffff;
 	font-family: "Raleway font", sans-serif;
-	font-size:200%;
+	font-size:150%;
 	text-decoration:none;
 	width:100%;
+	height: auto;
 }
 
 #reduce-font button{
